@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Text Embedding & Similarity Search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application provides a user interface for text embedding and similarity search functionalities. It allows users to input text, generate embeddings, and find similar texts based on those embeddings.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User authentication (login/logout)
+- Text embedding generation
+- Similarity search based on embedded text
+- Responsive design for various screen sizes
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, ensure you have met the following requirements:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/text-embedding-similarity-search.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
+   ```
+   cd text-embedding-similarity-search
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the dependencies:
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the development server:
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+2. Open your browser and visit `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Log in using your credentials
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Enter text in the provided textarea
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Click "Embed Text" to generate an embedding for the input text
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Click "Find Similar Texts" to search for similar texts based on the input
 
-## Learn More
+## API Integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This application requires a backend API running on `http://localhost:9000`. Ensure that your API provides the following endpoints:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- POST `/login`: For user authentication
+- POST `/embed`: For generating text embeddings
+- POST `/recommend`: For finding similar texts
 
-### Code Splitting
+Make sure to set up and run your backend server before using this application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions to this project are welcome. Please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature-name`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature-name`)
+5. Create a new Pull Request
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you have any questions or feedback, please contact:
 
-### Deployment
+Your Name - youremail@example.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: https://github.com/yourusername/text-embedding-similarity-search
