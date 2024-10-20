@@ -20,12 +20,12 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/text-embedding-similarity-search.git
+   git clone https://github.com/johnexzy/recommendation-demo.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd text-embedding-similarity-search
+   cd recommendation-demo
    ```
 
 3. Install the dependencies:
